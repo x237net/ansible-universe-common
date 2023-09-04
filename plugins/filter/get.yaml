@@ -1,0 +1,56 @@
+# plugins/filter/mapping.yaml
+# ===========================
+#
+# Copying
+# -------
+#
+# Copyright (c) 2023 universe.common authors and contributors.
+#
+# This file is part of the *universe.common* project.
+#
+# *universe.common* is a free software project. You can redistribute it and/or
+# modify it following the terms of the MIT License.
+#
+# This software project is distributed *as is*, WITHOUT WARRANTY OF ANY KIND;
+# including but not limited to the WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE and NONINFRINGEMENT.
+#
+# You should have received a copy of the MIT License along with
+# *universe.common*. If not, see <http://opensource.org/licenses/MIT>.
+#
+DOCUMENTATION:
+  name: "get"
+  version_added: "0.1.0"
+  short_description: >-
+    Return the value for *key* if *key* is found in the object, else *default*.
+  description:
+    - "Try each *key* into the given object until one matches."
+    - "Multiple keys can be provided. Only the value of the first key matching is returned."
+    - "If no key matches, *default* is returned."
+    - "If no default is provided and no key matches, ``None`` is returned."
+  positional: "_input, key, default"
+  options:
+    _input:
+      description: "The object to look into."
+      type: "dict"
+      required: true
+    key:
+      description: "The key to be tried from the provided container."
+      type: "raw"
+      required: true
+    default:
+      description: "A default value to be returned when no key matches."
+      type: "raw"
+
+EXAMPLES: |
+  # value => 'A'
+  value: "{{ {1: 'A', 2: 'B', 4: 'D'} | get(1) }}"
+  # value => 'B'
+  value: "{{ {2: 'B', 4: 'D'} | get(1, 2) }}"
+  # value => 'C'
+  value: "{{ {4: 'D'} | get(1, 2, default='C') }}"
+
+RETURN:
+  _value:
+    description: "The value mapped by the matching key."
+    type: "raw"
