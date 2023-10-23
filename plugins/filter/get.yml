@@ -25,7 +25,9 @@ DOCUMENTATION:
     Return the value for *key* if *key* is found in the object, else *default*.
   description:
     - "Try each *key* into the given object until one matches."
-    - "Multiple keys can be provided. Only the value of the first key matching is returned."
+    - >-
+      Multiple keys can be provided. Only the value of the first key matching is
+      returned.
     - "If no key matches, *default* is returned."
     - "If no default is provided and no key matches, ``None`` is returned."
   positional: "_input, key, default"
