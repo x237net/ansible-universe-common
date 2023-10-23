@@ -1,10 +1,10 @@
-# .pymarkdown.yml
-# ===============
+# changelogs/.gitignore
+# =====================
 #
 # Copying
 # -------
 #
-# Copyright (c) 2022 universe.common authors and contributors.
+# Copyright (c) 2023 universe.common authors and contributors.
 #
 # This file is part of the *universe.common* project.
 #
@@ -18,11 +18,4 @@
 # You should have received a copy of the MIT License along with
 # *universe.common*. If not, see <http://opensource.org/licenses/MIT>.
 #
-plugins:
-  # MD003: Heading style should be consistent throughout the document.
-  md003:
-    enabled: true
-    style: "setext_with_atx"
-  # MD0041: First line in file should be a top-level heading.
-  md041:
-    enabled: false
+.plugin-cache.yaml

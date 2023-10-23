@@ -21,7 +21,7 @@
 namespace: "universe"
 name: "common"
 description: "A general purpose set of Ansible modules."
-version: "0.1.0-alpha.1"
+version: "0.1.0"
 readme: "README.md"
 authors:
   - "See AUTHORS.rst"
@@ -31,6 +31,7 @@ tags:
   - "filter"
   - "general"
   - "plugin"
+  - "tools"
 repository: "https://github.com/x237net/ansible-universe-common"
 issues: "https://github.com/x237net/ansible-universe-common/issues"
 build_ignore:

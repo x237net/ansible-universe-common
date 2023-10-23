@@ -1,0 +1,19 @@
+ancestor: null
+releases:
+  0.1.0:
+    changes:
+      release_summary: |-
+        First release of the ``universe.common`` collection. Everything must be
+        considered early stage and no yet ready for production.
+    fragments:
+      - "v0.1.0.yml"
+    release_date: "2023-10-23"
+  0.1.0-alpha.1:
+    plugins:
+      filter:
+        - description: >-
+            Return the value for *key* if *key* is found in the object, else
+            *default*.
+          name: "get"
+          namespace: null
+    release_date: "2023-10-23"
