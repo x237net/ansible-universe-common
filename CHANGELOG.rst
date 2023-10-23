@@ -27,6 +27,9 @@ universe.common Release Notes
 .. contents:: Topics
 
 
+v0.1.1
+======
+
 v0.1.0
 ======
 
@@ -42,5 +45,4 @@ New Plugins
 Filter
 ~~~~~~
 
-``universe.common.get``
-    Return the value for *key* if *key* is found in the object, else *default*.
+- universe.common.get - Return the value for *key* if *key* is found in the object, else *default*.

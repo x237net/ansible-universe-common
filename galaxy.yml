@@ -21,7 +21,7 @@
 namespace: "universe"
 name: "common"
 description: "A general purpose set of Ansible modules."
-version: "0.1.0"
+version: "0.1.1"
 readme: "README.md"
 authors:
   - "See AUTHORS.rst"
