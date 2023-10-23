@@ -19,5 +19,10 @@
 # *universe.common*. If not, see <http://opensource.org/licenses/MIT>.
 #
 plugins:
+  # MD003: Heading style should be consistent throughout the document.
+  md003:
+    enabled: true
+    style: "setext_with_atx"
+  # MD0041: First line in file should be a top-level heading.
   md041:
     enabled: false
