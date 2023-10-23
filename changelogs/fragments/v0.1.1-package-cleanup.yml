@@ -1,5 +1,5 @@
-# galaxy.yml
-# ==========
+# changelogs/fragments/v0.1.1-package-cleanup.yml
+# ===============================================
 #
 # Copying
 # -------
@@ -18,27 +18,5 @@
 # You should have received a copy of the MIT License along with
 # *universe.common*. If not, see <http://opensource.org/licenses/MIT>.
 #
-namespace: "universe"
-name: "common"
-description: "A general purpose set of Ansible modules."
-version: "0.1.0"
-readme: "README.md"
-authors:
-  - "See AUTHORS.rst"
-license_file: "LICENSE.rst"
-tags:
-  - "ansible"
-  - "filter"
-  - "general"
-  - "plugin"
-  - "tools"
-repository: "https://github.com/x237net/ansible-universe-common"
-issues: "https://github.com/x237net/ansible-universe-common/issues"
-build_ignore:
-  - ".*"
-  - "*.lock"
-  - "**/.*"
-  - "**/*.lock"
-  - "changelogs/fragments"
-  - "changelogs/fragments/*/**"
-  - "pyproject.toml"
+trivial:
+  - "Remove extra files from the collection's package."
