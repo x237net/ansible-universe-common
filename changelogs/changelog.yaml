@@ -42,3 +42,5 @@ releases:
     fragments:
       - "v0.1.1-package-cleanup.yml"
     release_date: "2023-10-24"
+  0.1.2:
+    release_date: "2023-10-24"
