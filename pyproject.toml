@@ -39,7 +39,7 @@ use_parentheses = true
 
 [tool.poetry]
 name = "ansible-universe-common"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["See AUTHORS.rst"]
 maintainers = [
     "Jimmy Thrasibule <dev@jimmy.lt>",
@@ -83,6 +83,7 @@ python = "^3.9"
 [tool.poetry.group.dev.dependencies]
 ansible = "^8.5.0"
 antsibull-changelog = {extras = ["toml"], version = "^0.23.0"}
+pre-commit = "^4.0.0"
 
 [tool.poetry.group.lint.dependencies]
 black = "^23.10.0"
