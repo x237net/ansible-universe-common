@@ -39,7 +39,7 @@ use_parentheses = true
 
 [tool.poetry]
 name = "ansible-universe-common"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["See AUTHORS.rst"]
 maintainers = [
     "Jimmy Thrasibule <dev@jimmy.lt>",

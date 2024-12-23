@@ -31,16 +31,24 @@ releases:
   0.1.0-alpha.1:
     plugins:
       filter:
-        - description: >-
+        - description: |-
             Return the value for *key* if *key* is found in the object, else
             *default*.
           name: "get"
           namespace: null
     release_date: "2023-10-23"
   0.1.1:
-    changes: {}
     fragments:
       - "v0.1.1-package-cleanup.yml"
     release_date: "2023-10-24"
   0.1.2:
     release_date: "2023-10-24"
+  0.2.0:
+    plugins:
+      filter:
+        - description: |-
+            Return a unique list of all the elements from two lists if the
+            predicate is true. Otherwise, return the first list.
+          name: union_when
+          namespace: null
+    release_date: "2024-12-23"

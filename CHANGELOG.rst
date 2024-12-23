@@ -27,6 +27,18 @@ universe.common Release Notes
 .. contents:: Topics
 
 
+v0.2.0
+======
+
+New Plugins
+-----------
+
+Filter
+~~~~~~
+
+- universe.common.union_when - Return a unique list of all the elements from two
+lists if the predicate is true. Otherwise, return the first list.
+
 v0.1.2
 ======
 

@@ -20,7 +20,7 @@
 #
 DOCUMENTATION:
   name: "union_when"
-  version_added: "0.1.2"
+  version_added: "0.2.0"
   short_description: >-
     Return a unique list of all the elements from two lists if the predicate
     is true. Otherwise, return the first list.
